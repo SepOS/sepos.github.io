@@ -1,0 +1,6 @@
+@import "colors";
+@import "fonts";
+
+p{
+    @include i-para;
+}
