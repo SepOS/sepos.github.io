@@ -13,8 +13,7 @@
   display: flex;
   flex-flow: column wrap;
   align-items: flex-start;
-  z-index: 10;
-  gap: 30px;
+  gap: 1.8rem;
   width: 28rem;
   height: -moz-fit-content;
   height: fit-content;
@@ -23,7 +22,7 @@
   display: flex;
   flex-flow: column wrap;
   align-items: flex-start;
-  gap: 15px;
+  gap: 0.9rem;
 }
 .about-text .header h1, .about-text .header h3 {
   flex: none;
@@ -35,7 +34,7 @@
   font-size: 15px !important;
   font-style: normal !important;
   font-weight: normal !important;
-  color: #383838;
+  color: #787878;
   text-transform: uppercase;
 }
 .about-text .header .title {
@@ -52,20 +51,20 @@
   font-size: 15px !important;
   font-style: italic !important;
   font-weight: normal !important;
-  color: #383838;
+  color: #787878;
 }
 .about-text .body {
   display: flex;
   flex-flow: column wrap;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 30px;
+  gap: 1.8rem;
   font-family: "Inter", sans-serif !important;
   font-size: 15px !important;
   font-style: normal !important;
   font-weight: normal !important;
   color: #191D20;
-  line-height: 24px !important;
+  line-height: 1.5rem !important;
   text-align: justify;
 }
 .about-text .body p {
@@ -83,5 +82,6 @@
   flex-flow: row wrap;
   justify-content: flex-end;
   align-items: flex-start;
-  gap: 30px;
+  align-self: stretch;
+  gap: 1.5rem;
 }/*# sourceMappingURL=page-about.css.map */

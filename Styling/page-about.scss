@@ -10,9 +10,8 @@
     display: flex;
     flex-flow: column wrap;
     align-items: flex-start;
-    z-index: 10;
 
-    gap: 30px;
+    gap: 1.8rem;
 
     width: 28rem;
     height: fit-content;
@@ -22,7 +21,7 @@
         flex-flow: column wrap;
         align-items: flex-start;
 
-        gap: 15px;
+        gap: 0.9rem;
 
         h1, h3{
             flex: none;
@@ -31,7 +30,7 @@
 
         .greeting{
             order: 0;
-            @include main-param($dark-gray);
+            @include main-param($medium-gray);
             text-transform: uppercase;
         }
         .title{
@@ -40,7 +39,7 @@
         }
         .sub-title{
             order: 2;
-            @include main-param-it($dark-gray);
+            @include main-param-it($medium-gray);
         }
     }
     .body{
@@ -49,10 +48,10 @@
         justify-content: flex-start;
         align-items: flex-start;
 
-        gap: 30px;
+        gap: 1.8rem;
 
         @include main-param;
-        line-height: 24px !important;
+        line-height: 1.5rem !important;
         text-align: justify;
 
         p{
@@ -72,7 +71,8 @@
         flex-flow: row wrap;
         justify-content: flex-end;
         align-items: flex-start;
+        align-self: stretch;
 
-        gap: 30px;
+        gap: 1.5rem;
     }
 }

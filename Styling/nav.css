@@ -9,16 +9,16 @@
 .navbar-top {
   background-color: transparent !important;
 }
-@media (min-width: 576px) {
+@media (min-width: 0px) {
   .navbar-top {
-    padding-top: 6vh;
-    padding-bottom: 10vh;
+    padding-top: 4vh;
+    padding-bottom: 8vh;
   }
 }
 @media (min-width: 992px) {
   .navbar-top {
     padding-top: 2.5rem;
-    padding-bottom: 6.5rem;
+    padding-bottom: 8rem;
   }
 }
 .navbar-top .container {
@@ -78,4 +78,78 @@
 .navbar-top .container .navbar-toggler:focus {
   color: #787878;
   box-shadow: 0 0 0 0.15rem;
+}
+
+@media (min-width: 0px) {
+  .crumbs {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  .crumbs {
+    position: fixed;
+    top: 40vh;
+    right: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+    z-index: 100;
+    height: -moz-fit-content;
+    height: fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+    padding-right: 2.5rem;
+    gap: 0.625rem;
+  }
+  .crumbs li {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none;
+  }
+  .crumbs li a {
+    font-family: "Inter", sans-serif !important;
+    font-size: 11px !important;
+    font-style: italic !important;
+    font-weight: normal !important;
+    color: #B8B8B8;
+    text-transform: capitalize;
+    text-decoration: none;
+    padding-right: 0.5rem;
+  }
+  .crumbs li a:hover {
+    color: #479AFB !important;
+  }
+  .crumbs li a:active {
+    color: #FF3868 !important;
+    text-decoration: underline;
+  }
+  .crumbs li::after {
+    content: "";
+    width: 0.8rem;
+    height: 0.8rem;
+    background: linear-gradient(135deg, rgba(248, 248, 248, 0.8) 0%, rgba(248, 248, 248, 0.6) 100%);
+    box-shadow: inset 0.06rem 0.09rem 0.2rem rgba(0, 0, 0, 0.25);
+    border-radius: 100%;
+  }
+  .crumbs li.active a {
+    font-family: "Inter", sans-serif !important;
+    font-size: 11px !important;
+    font-style: italic !important;
+    font-weight: normal !important;
+    color: #383838;
+  }
+  .crumbs li.active::after {
+    background: linear-gradient(135deg, rgba(56, 56, 56, 0.8) 0%, rgba(56, 56, 56, 0.6) 100%);
+  }
+  .crumbs div {
+    content: "";
+    width: 0.25rem;
+    height: 0.25rem;
+    margin-right: 0.25rem;
+    background: #B8B8B8;
+    border-radius: 100%;
+  }
 }/*# sourceMappingURL=nav.css.map */
