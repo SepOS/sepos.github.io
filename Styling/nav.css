@@ -1,0 +1,81 @@
+/*
+ * Import of google fonts
+ */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/*
+ * Color variables
+ */
+.navbar-top {
+  background-color: transparent !important;
+}
+@media (min-width: 576px) {
+  .navbar-top {
+    padding-top: 6vh;
+    padding-bottom: 10vh;
+  }
+}
+@media (min-width: 992px) {
+  .navbar-top {
+    padding-top: 2.5rem;
+    padding-bottom: 6.5rem;
+  }
+}
+.navbar-top .container {
+  padding: 0.5rem 1.5rem;
+  width: 32vw;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  background: linear-gradient(90.22deg, rgba(255, 255, 255, 0.8) -3.55%, rgba(255, 255, 255, 0.8) -3.54%, rgba(255, 255, 255, 0.4) 102.29%);
+  box-shadow: 0px 6px 30px -5px rgba(0, 0, 0, 0.1);
+  border-radius: 1.3rem;
+  -webkit-backdrop-filter: blur(0.25rem);
+          backdrop-filter: blur(0.25rem);
+}
+.navbar-top .container .button-primary {
+  padding: 0.1rem 1.1rem;
+  border-radius: 5rem;
+}
+.navbar-top .container .nav-item {
+  font-family: "Bitter", serif !important;
+  font-size: 16px !important;
+  font-style: normal !important;
+  font-weight: bold !important;
+  color: #383838;
+  text-transform: capitalize;
+  text-decoration: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+@media (min-width: 200px) {
+  .navbar-top .container .nav-item a {
+    padding: 1rem;
+    margin: 0;
+  }
+}
+@media (min-width: 576px) {
+  .navbar-top .container .nav-item a {
+    padding: 0;
+    margin-right: 4.5vw;
+  }
+}
+.navbar-top .container .nav-item a:hover {
+  color: #479AFB;
+}
+.navbar-top .container .nav-item a:active {
+  color: #FF3868;
+  text-decoration: underline;
+}
+.navbar-top .container .navbar-toggler {
+  padding: 0rem 0.5rem;
+  margin-right: 1.5rem;
+}
+.navbar-top .container .navbar-toggler:focus {
+  color: #787878;
+  box-shadow: 0 0 0 0.15rem;
+}/*# sourceMappingURL=nav.css.map */
