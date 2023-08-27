@@ -1,0 +1,74 @@
+/*
+ * First page 
+ */
+
+.about-text{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    z-index: 10;
+
+    gap: 30px;
+
+    width: 28rem;
+    height: fit-content;
+
+    .header{
+        display: flex;
+        flex-flow: column wrap;
+        align-items: flex-start;
+
+        gap: 15px;
+
+        h1, h3{
+            flex: none;
+            align-self: stretch;
+        }
+
+        .greeting{
+            order: 0;
+            @include main-param($dark-gray);
+            text-transform: uppercase;
+        }
+        .title{
+            order: 1;
+            @include second-title;
+        }
+        .sub-title{
+            order: 2;
+            @include main-param-it($dark-gray);
+        }
+    }
+    .body{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        gap: 30px;
+
+        @include main-param;
+        line-height: 24px !important;
+        text-align: justify;
+
+        p{
+            flex: none;
+            align-self: stretch;
+
+            &:first-of-type{
+                order: 0;
+            }
+            &:last-of-type{
+                order: 1;
+            }
+        }
+    }
+    .footer{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+        align-items: flex-start;
+
+        gap: 30px;
+    }
+}
