@@ -2,6 +2,9 @@
 <html>
 
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="Styling/main.css">
 </head>
 
@@ -11,26 +14,39 @@
         <li><a href="#About">About</a></li>
         <li><a href="#Experience">Experience</a></li>
         <li><a href="#Contact">Contact</a></li>
-        <li><a href="#Resume">Resume</a></li>
+        <button type="button" class="button-primary">
+            Resume
+            <svg viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21.5938 19.6354H4.23958C3.55498 19.6354 3 20.1904 3 20.875C3 21.5596 3.55498 22.1145 4.23958 22.1145H21.5938C22.2784 22.1145 22.8333 21.5596 22.8333 20.875C22.8333 20.1904 22.2784 19.6354 21.5938 19.6354Z"/>
+                <path d="M3 18.3958V20.8749C3 21.5595 3.55498 22.1145 4.23958 22.1145C4.92419 22.1145 5.47917 21.5595 5.47917 20.8749V18.3958C5.47917 17.7111 4.92419 17.1562 4.23958 17.1562C3.55498 17.1562 3 17.7111 3 18.3958Z"/>
+                <path d="M20.3542 18.3958V20.8749C20.3542 21.5595 20.9092 22.1145 21.5938 22.1145C22.2784 22.1145 22.8334 21.5595 22.8334 20.8749V18.3958C22.8334 17.7111 22.2784 17.1562 21.5938 17.1562C20.9092 17.1562 20.3542 17.7111 20.3542 18.3958Z"/>
+                <path d="M12.9167 15.9166C12.6597 15.9186 12.4084 15.8406 12.1977 15.6935L7.23936 12.1979C6.97212 12.0083 6.79081 11.7206 6.73506 11.3977C6.67931 11.0749 6.75366 10.7431 6.94186 10.4748C7.0358 10.3408 7.15537 10.2266 7.29366 10.139C7.43195 10.0514 7.58622 9.99209 7.74757 9.96444C7.90892 9.93678 8.07415 9.94135 8.23372 9.97789C8.39329 10.0144 8.54404 10.0822 8.67728 10.1773L12.9167 13.1399L17.1312 9.96661C17.3942 9.76936 17.7248 9.68466 18.0503 9.73115C18.3757 9.77765 18.6694 9.95152 18.8667 10.2145C19.0639 10.4775 19.1486 10.8081 19.1021 11.1336C19.0556 11.459 18.8817 11.7527 18.6187 11.9499L13.6604 15.6687C13.4458 15.8296 13.1849 15.9166 12.9167 15.9166Z"/>
+                <path d="M12.9166 13.4375C12.5879 13.4375 12.2726 13.3069 12.0401 13.0744C11.8077 12.8419 11.6771 12.5266 11.6771 12.1979V2.28121C11.6771 1.95245 11.8077 1.63716 12.0401 1.40469C12.2726 1.17222 12.5879 1.04163 12.9166 1.04163C13.2454 1.04163 13.5607 1.17222 13.7932 1.40469C14.0256 1.63716 14.1562 1.95245 14.1562 2.28121V12.1979C14.1562 12.5266 14.0256 12.8419 13.7932 13.0744C13.5607 13.3069 13.2454 13.4375 12.9166 13.4375Z"/>
+            </svg>
+        </button>
     </nav>
 
-    <nav class="side-nav">
-        <li><a href="#About">About</a></li>
-        <li><a href="#Experience">Experience</a></li>
-        <li><a href="#Contact">Contact</a></li>
+    <nav class="crumbs">
+        <li><a href="#About">About —</a></li>
+        <div></div><div></div><div></div>
+        <li><a href="#Experience">Experience —</a></li>
+        <div></div><div></div><div></div>
+        <li><a href="#Contact">Contact —</a></li>
     </nav>
 
     <section class="about-text">
 
         <div class="header"> 
             <h3 class="greeting">— Good Morning</h3>
-            <h1 class="title">I'm Seppe Wouters</h1>
+            <h1 class="title">I'm <span class="highlight">Seppe</span> Wouters</h1>
             <h3 class="sub-title">Industrial electronics and ICT engineer</h3>
         </div>
             
-        <p>Calling myself an engineer is just a fancy way of saying; I am a professional problem solver who cannot resist overanalysing everything!
-            <br>But do not worry, I balance my geeky tendencies with being an empathic troubleshooter ready to help others.</p>
-        <p>Let's connect and create some sparks of innovation together!</p>
+        <div class="body">
+            <p>Calling myself an engineer is just a fancy way of saying; I am a professional problem solver who cannot resist overanalysing everything!
+                <br>But do not worry, I balance my geeky tendencies with being an empathic troubleshooter ready to help others.</p>
+            <p>Let's connect and create some sparks of innovation together!</p>
+        </div>
 
         <div class="footer"> 
             <button>Resume</button>
@@ -40,5 +56,4 @@
     </section>
 
 </body>
-
 </html>
