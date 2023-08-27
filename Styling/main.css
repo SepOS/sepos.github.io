@@ -13,13 +13,65 @@
 }
 
 html, body {
-  background-color: #F8F8F8;
+  background-color: #191D20;
   height: 8000px;
+}
+
+.row {
+  border-style: dashed;
+  border-color: red;
+}
+
+.col {
+  background-color: aliceblue;
+  border-style: solid;
+  border-color: aqua;
+}
+
+.navbar-top {
+  background-color: transparent !important;
+}
+.navbar-top .container {
+  padding: 0.15rem 1.5rem;
+  width: 32vw;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  background: linear-gradient(90.22deg, rgba(255, 255, 255, 0.8) -3.55%, rgba(255, 255, 255, 0.8) -3.54%, rgba(255, 255, 255, 0.4) 102.29%);
+  box-shadow: 0px 6px 30px -5px rgba(0, 0, 0, 0.1);
+  border-radius: 1.3rem;
+  -webkit-backdrop-filter: blur(0.28rem);
+          backdrop-filter: blur(0.28rem);
+}
+.navbar-top .container .button-primary {
+  padding: 0.1rem 1.1rem;
+}
+.navbar-top .container .nav-item {
+  font-family: "Bitter", serif !important;
+  font-size: 16px !important;
+  font-style: normal !important;
+  font-weight: bold !important;
+  color: #383838;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+.navbar-top .container .nav-item a {
+  padding-left: 0;
+  padding-right: 4.5vw;
+}
+.navbar-top .container .nav-item a:hover {
+  color: #479AFB;
+}
+.navbar-top .container .nav-item a:focus {
+  color: #FF3868;
 }
 
 .top-nav {
   position: sticky;
-  top: 2rem;
+  top: 0.4rem;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -120,8 +172,6 @@ html, body {
   width: 28rem;
   height: -moz-fit-content;
   height: fit-content;
-  margin-top: 8rem;
-  margin-left: 20vw;
 }
 .about-text .header {
   display: flex;

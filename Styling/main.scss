@@ -9,30 +9,68 @@
 
 html, body{
     //margin: 0.625rem;
-    background-color: $white;
+    background-color: $black;
     height: 8000px;
 }
 
-// svg{
-//     &.small-svg{
-//       &.left-icon{order: 0 !important;}
-//       &.right-icon{order: 1 !important;}
-//       width: 1.4em !important;
-//       height: 1.4em !important;
-//     }
-//     &.big-svg{
-//       &.left-icon{order: 0 !important;}
-//       &.right-icon{order: 1 !important;}
-//       width: 4em !important;
-//       height: 4em !important;
-//     }
-// }
-  
+.container{
+    //border-style: dotted;
+    //border-color: black;
+}
+.row{
+    border-style: dashed;
+    border-color: red;
+}
+.col{
+    background-color: aliceblue;
+    border-style: solid;
+    border-color: aqua;
+}
+
+.navbar-top{
+    background-color: transparent !important;
+
+    .container{
+        padding: 0.15rem 1.5rem;
+        
+        width: 32vw;
+        min-width: fit-content;
+        height: fit-content;
+        min-height: fit-content;
+
+        background: linear-gradient(90.22deg, rgba(255, 255, 255, 0.8) -3.55%, rgba(255, 255, 255, 0.8) -3.54%, rgba(255, 255, 255, 0.4) 102.29%);
+        box-shadow: 0px 6px 30px -5px rgba(0, 0, 0, 0.1);
+        border-radius: 1.3rem;
+        backdrop-filter: blur(0.28rem);
+
+        .button-primary{
+            padding: 0.1rem 1.1rem;
+        }
+
+        .nav-item{
+            @include second-link($dark-gray);
+            text-transform: capitalize;
+            text-decoration: none;
+
+            a{
+                padding-left: 0;
+                padding-right: 4.5vw;
+
+                &:hover{
+                    color: $blue;
+                }
+                &:focus{
+                    color: $red;
+                }
+            }
+        }
+    }
+}
 
 .top-nav{
     position: -webkit-sticky;
     position: sticky;
-    top: 2rem;
+    top: 0.4rem;
 
     display: flex;
     flex-flow: row nowrap;
@@ -147,8 +185,8 @@ html, body{
     width: 28rem;
     height: fit-content;
     
-    margin-top: 8rem;
-    margin-left: 20vw;
+    //margin-top: 8rem;
+    //margin-left: 20vw;
 
     .header{
         display: flex;
