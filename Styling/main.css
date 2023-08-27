@@ -69,47 +69,6 @@ html, body {
   color: #FF3868;
 }
 
-.top-nav {
-  position: sticky;
-  top: 0.4rem;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 100;
-  padding: 0.6rem 1.5rem;
-  margin-left: auto;
-  margin-right: auto;
-  width: 32vw;
-  min-width: -moz-fit-content;
-  min-width: fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  min-height: -moz-fit-content;
-  min-height: fit-content;
-  box-sizing: border-box;
-  background: linear-gradient(90.22deg, rgba(255, 255, 255, 0.8) -3.55%, rgba(255, 255, 255, 0.8) -3.54%, rgba(255, 255, 255, 0.4) 102.29%);
-  box-shadow: 0px 6px 30px -5px rgba(0, 0, 0, 0.1);
-  border-radius: 1.3rem;
-  -webkit-backdrop-filter: blur(0.28rem);
-          backdrop-filter: blur(0.28rem);
-}
-.top-nav li {
-  list-style-type: none;
-}
-.top-nav li a {
-  font-family: "Bitter", serif !important;
-  font-size: 16px !important;
-  font-style: normal !important;
-  font-weight: bold !important;
-  color: #383838;
-  text-transform: capitalize;
-  text-decoration: none;
-}
-.top-nav button {
-  padding: 0.1rem 1.1rem;
-}
-
 .crumbs {
   position: sticky;
   top: 45vh;
