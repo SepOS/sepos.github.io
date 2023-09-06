@@ -1,19 +1,16 @@
 @import "fonts";
 @import "colors";
-@import "mixins";
+@import "assets";
+@import "bootstrap-settings";
 
-/*
- * First page 
- */
-
-.about-text{
+@mixin page-container($gap-container, $gap-body, $width: fit-content){
     display: flex;
     flex-flow: column wrap;
     align-items: flex-start;
 
-    gap: 1.8rem;
+    gap: $gap-container;
 
-    width: 28rem;
+    width: $width;
     height: fit-content;
 
     .header{
@@ -21,7 +18,7 @@
         flex-flow: column wrap;
         align-items: flex-start;
 
-        gap: 0.9rem;
+        gap: 0.4rem;
 
         h1, h3{
             flex: none;
@@ -48,7 +45,7 @@
         justify-content: flex-start;
         align-items: flex-start;
 
-        gap: 1.8rem;
+        gap: $gap-body;
 
         @include main-param;
         line-height: 1.5rem !important;
@@ -74,5 +71,34 @@
         align-self: stretch;
 
         gap: 1.5rem;
+    }
+}
+
+/*
+ * First page 
+ */
+
+.about-text{
+    @include page-container(2rem, 1.8rem, 28rem);
+}
+
+/*
+ * Second page 
+ */
+
+.experience-text{
+    @include page-container(2rem, 1.8rem);
+}
+
+/*
+ * Third page 
+ */
+
+.contact-text{
+    @include page-container(0.4rem, 0rem);
+    svg{
+        width: 1.1rem;
+        height: fit-content;
+        margin: 0 0.5rem 0 0;
     }
 }

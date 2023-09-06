@@ -3,32 +3,30 @@
 
 <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" type="text/css" href="css/colors.css">
     <link rel="stylesheet" type="text/css" href="css/fonts.css">
-    <link rel="stylesheet" type="text/css" href="css/mixins.css">
-    <link rel="stylesheet" type="text/css" href="css/buttons.css">
-    <link rel="stylesheet" type="text/css" href="css/nav.css">
-    <link rel="stylesheet" type="text/css" href="css/page-about.css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap-aids.css">
+    <link rel="stylesheet" type="text/css" href="css/assets.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-settings.css">
+
+    <link rel="stylesheet" type="text/css" href="css/pages.css">
+
     <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 
 <body>
-
-    <nav class="navbar navbar-expand-sm bg-body-tertiary sticky-top navbar-top">
+    <nav id="navbar-spy" class="navbar navbar-expand-sm bg-body-tertiary sticky-top navbar-top">
         <div class="container">
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-collapse-content" aria-controls="navbar-collapse-content" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse" id="navbar-collapse-content">
 
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#About">About</a>
+                        <a class="nav-link active" href="#About">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#Experience">Experience</a>
@@ -54,46 +52,34 @@
         </div>
     </nav>
 
-    <nav class="crumbs">
-        <li class="active">
-            <a aria-current="page" href="#About">About —</a>
-        </li>
+    <div id="list-spy" class="list-crumbs">
+        <a class="list-group-item list-group-item-action active" href="#About">About —</a>
+        <div></div>
+        <div></div>
+        <div></div>
+        <a class="list-group-item list-group-item-action" href="#Experience">Experience —</a>
+        <div></div>
+        <div></div>
+        <div></div>
+        <a class="list-group-item list-group-item-action" href="#Contact">Contact —</a>
+    </div>
 
-        <div></div>
-        <div></div>
-        <div></div>
-
-        <li>
-            <a href="#Experience">Experience —</a>
-        </li>
-
-        <div></div>
-        <div></div>
-        <div></div>
-        <li>
-
-            <a href="#Contact">Contact —</a>
-        </li>
-    </nav>
-
-    <div class="container">
-        <div class="row">
-            <div class="col">
+    <div class="container container-body" data-bs-spy="scroll" data-bs-target="#navbar-spy" tabindex="0" data-bs-smooth-scroll="true">
+        <div class="row row-cols-1 justify-content-center" id="About">
+            <div class="col-lg-6 p-3 m-3 align-self-start order-1">
                 <section class="about-text">
 
-                    <div class="header"> 
-                        <h3 class="greeting">— Good Morning</h3>
+                    <header class="header"> 
+                        <h3 class="greeting" id="greeting">— Good Morning</h3>
                         <h1 class="title">I'm <span class="highlight">Seppe</span> Wouters</h1>
                         <h3 class="sub-title">Industrial electronics and ICT engineer</h3>
-                    </div>
+                    </header>
                         
                     <div class="body">
-                        <p>Calling myself an engineer is just a fancy way of saying; I am a professional problem solver who cannot resist overanalysing everything!
-                            <br>But do not worry, I balance my geeky tendencies with being an empathic troubleshooter ready to help others.</p>
-                        <p>Let's connect and create some sparks of innovation together!</p>
+                        <p>Calling myself an engineer is just a fancy way of saying; I am a professional problem solver who cannot resist overanalysing everything!<br>But do not worry, I balance my geeky tendencies with being an empathic troubleshooter ready to help others.<br><br>Let's connect and create some sparks of innovation together!</p>
                     </div>
             
-                    <div class="footer"> 
+                    <footer class="footer"> 
                         <button type="button" class="button-primary">
                             Resume
                             <svg viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
@@ -111,34 +97,78 @@
                                 <path d="M10.4583 13.5833C12.1842 13.5833 13.5833 12.1842 13.5833 10.4583C13.5833 8.73244 12.1842 7.33333 10.4583 7.33333C8.73244 7.33333 7.33333 8.73244 7.33333 10.4583C7.33333 12.1842 8.73244 13.5833 10.4583 13.5833Z"/>
                             </svg>
                         </button>
-                    </div>
+                    </footer>
             
                 </section>
             </div>
-            <div class="col">
-                
+        </div>
+
+        <div class="row row-cols-1 justify-content-center dummy"></div>
+
+        <div class="row row-cols-1 justify-content-center" id="Experience">
+            <div class="col-lg-6 p-3 m-3 align-self-start order-2">
+                <section class="experience-text">
+
+                    <header class="header"> 
+                        <h1 class="title">My Experience</h1>
+                    </header>
+
+                    <div class="body">
+                        <p></p>
+                    </div>
+
+                </section>
             </div>
-            <div class="col">
-                
+        </div>
+
+        <div class="row row-cols-1 justify-content-center dummy"></div>
+
+        <div class="row row-cols-1 justify-content-center last" id="Contact">
+            <div class="col-lg-3 p-3 m-3 align-self-start order-3">
+                <section class="contact-text">
+
+                    <header class="header"> 
+                        <h1 class="title">Let's <span class="highlight">Talk</span></h1>
+                    </header>
+
+                    <div class="body">
+                        <p>
+                            <span class="highlight">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"></path>
+                                </svg>
+                            </span>
+                            +32 468 164 655
+                        </p>
+
+                        <p>
+                            <span class="highlight">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                                    <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"></path>
+                                </svg>
+                            </span>
+                            seppe.wouters@telenet.be
+                        </p>
+                    </div>
+
+                    <!--back to top button-->
+
+                </section>
             </div>
         </div>
     </div>
 
-    <div class="background">
-
-        <svg class="orange" viewBox="0 0 2261 1936" xmlns="http://www.w3.org/2000/svg">
-            <path d="M303.768 1342.9C-118.751 1188.39 -93.3786 583.993 342.605 477.632L1027.43 310.562C1092.41 294.71 1153.28 265.597 1206.15 225.075L1402.77 74.379C1634.35 -103.102 1972.43 57.8214 1979.18 348.74C1981.34 441.577 2020.18 530.058 2087.34 595.124L2119.17 625.957C2366.74 865.789 2275.62 1278.61 1950.27 1391.22L1813.36 1438.61C1757.67 1457.88 1705.91 1486.76 1660.45 1523.93L1279.33 1835.48C1037.49 2033.18 669.323 1923.36 575.385 1625.5C534.21 1494.94 433.244 1390.24 303.768 1342.9Z"/>
-        </svg>
-
-        <svg class="red" viewBox="0 0 2189 1852" xmlns="http://www.w3.org/2000/svg">
-            <path d="M267.402 1221.36C-136.422 1036.87 -65.5998 443.762 371.337 370.266L1029.68 259.526C1095.1 248.522 1157.36 223.845 1212.34 187.125L1401.32 60.9086C1641.63 -99.5877 1965.03 80.5077 1953.95 368.657C1950.46 459.313 1982.36 547.993 2042.98 616.184L2071.67 648.448C2298.64 903.748 2178.63 1305.62 1849 1394.09L1731.15 1425.73C1673.21 1441.28 1618.61 1467.06 1569.95 1501.86L1195.35 1769.72C943.182 1950.03 586.126 1817.6 512.573 1516.47C480.792 1386.36 389.928 1277.33 267.402 1221.36Z"/>
-        </svg>
-
-        <svg class="white" viewBox="0 0 1826 1546" xmlns="http://www.w3.org/2000/svg">
-            <path d="M220.119 1011.2C-116.977 852.043 -51.4849 354.864 316.066 297.145L861.613 211.476C916.733 202.82 969.296 182.563 1015.79 152.058L1171.06 50.1908C1374.14 -83.05 1644.7 70.3093 1633.76 312.46C1630.33 388.26 1656.33 462.63 1706.38 520.216L1730.04 547.447C1918.47 764.241 1813.91 1101.07 1535.98 1172.6L1446.79 1195.56C1394.81 1208.94 1345.75 1231.56 1301.96 1262.34L995.208 1478C781.904 1627.96 482.548 1514.15 422.757 1260.37C397.055 1151.28 322.036 1059.32 220.119 1011.2Z"/>
-        </svg>
+    <footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" 
+            crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+			integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+			crossorigin="anonymous"></script>
             
-    </div>
+        <script src="/js/main.js"></script>
+    </footer>
 
 </body>
+
 </html>
