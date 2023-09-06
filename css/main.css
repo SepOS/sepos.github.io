@@ -23,7 +23,8 @@
     border-style: dashed;
     border-color: red;
 }
-.col-auto,.col,.col-4,.col-8,.col-6,.col-md-6,.col-lg-6{
+.col-auto,.col,.col-4,.col-8,.col-6,.col-md-6,.col-lg-6
+,.col-lg-3{
     border-style: solid;
     border-color: aqua;
 }
@@ -185,7 +186,7 @@ button {
   user-select: none;
   width: -moz-fit-content;
   width: fit-content;
-  margin-right: 4.5vw !important;
+  margin-right: 3.5vw !important;
   padding: 0.1rem 0.5rem;
   border-radius: 5rem;
 }
@@ -259,6 +260,7 @@ button {
     text-decoration: none;
     width: -moz-fit-content;
     width: fit-content;
+    pointer-events: none;
   }
   .list-crumbs a:hover {
     color: #479AFB !important;
@@ -306,7 +308,8 @@ button {
     border-style: dashed;
     border-color: red;
 }
-.col-auto,.col,.col-4,.col-8,.col-6,.col-md-6,.col-lg-6{
+.col-auto,.col,.col-4,.col-8,.col-6,.col-md-6,.col-lg-6
+,.col-lg-3{
     border-style: solid;
     border-color: aqua;
 }
@@ -352,7 +355,8 @@ button {
     border-style: dashed;
     border-color: red;
 }
-.col-auto,.col,.col-4,.col-8,.col-6,.col-md-6,.col-lg-6{
+.col-auto,.col,.col-4,.col-8,.col-6,.col-md-6,.col-lg-6
+,.col-lg-3{
     border-style: solid;
     border-color: aqua;
 }
@@ -510,7 +514,7 @@ button {
   user-select: none;
   width: -moz-fit-content;
   width: fit-content;
-  margin-right: 4.5vw !important;
+  margin-right: 3.5vw !important;
   padding: 0.1rem 0.5rem;
   border-radius: 5rem;
 }
@@ -584,6 +588,7 @@ button {
     text-decoration: none;
     width: -moz-fit-content;
     width: fit-content;
+    pointer-events: none;
   }
   .list-crumbs a:hover {
     color: #479AFB !important;
@@ -631,7 +636,8 @@ button {
     border-style: dashed;
     border-color: red;
 }
-.col-auto,.col,.col-4,.col-8,.col-6,.col-md-6,.col-lg-6{
+.col-auto,.col,.col-4,.col-8,.col-6,.col-md-6,.col-lg-6
+,.col-lg-3{
     border-style: solid;
     border-color: aqua;
 }
