@@ -25,6 +25,22 @@
     color: $fontColor;
 }
 
+@mixin main-sub-small($fontColor : $black){
+    @include main-font-family;
+    font-size: 13px !important;
+    font-style: normal !important;
+    font-weight: normal !important;
+    color: $fontColor;
+}
+
+@mixin main-sub-it($fontColor : $black){
+    @include main-font-family;
+    font-size: 13px !important;
+    font-style: italic !important;
+    font-weight: normal !important;
+    color: $fontColor;
+}
+
 @mixin main-small($fontColor : $black){
     @include main-font-family;
     font-size: 11px !important;
@@ -51,6 +67,14 @@
 @mixin second-title($fontColor : $black){
     @include second-font-family;
     font-size: 40px !important;
+    font-style: normal !important;
+    font-weight: bold !important;
+    color: $fontColor;
+}
+
+@mixin second-param($fontColor : $black){
+    @include second-font-family;
+    font-size: 15px !important;
     font-style: normal !important;
     font-weight: bold !important;
     color: $fontColor;

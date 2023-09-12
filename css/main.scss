@@ -5,7 +5,7 @@
 
 @import "pages";
 
-//Main styles
+//Remove paddings and margins
 *{
     margin: 0;
     padding: 0;
@@ -13,10 +13,74 @@
 }
 
 html, body{
-    background-color: transparent;
-    //height: 8000px;
+    background-color: $white;
 }
 
-.highlight{
-    color: $secondary-color;
+/*
+ * Text styling
+ */
+h1 {
+    @include second-title;
+}
+h2 {
+    @include main-sub-small($medium-gray);
+    text-transform: uppercase;
+
+    &.it{
+        @include main-param-it($medium-gray);
+        text-transform: none;
+    }
+}
+h3 {
+    @include second-param($dark-gray);
+    text-transform: none;
+}
+p {
+    @include main-param;
+    line-height: 1.5rem !important;
+    text-align: justify;
+}
+a {
+    &.nav-link{
+        @include second-link($medium-gray);
+
+        &.active{
+            @include second-link($dark-gray);
+        }
+
+        &:active{
+            color: $white !important;
+        }
+    }
+
+    &.list-group-item{
+        // REMOVE TO MAKE IT CLICKABLE
+        pointer-events: none;
+
+        @include main-small($light-gray);
+
+        .active{
+            @include main-small($dark-gray);
+        }
+
+        &:active{
+            color: $red !important;
+            text-decoration: underline;
+        }
+    }
+    
+    text-transform: capitalize;
+    text-decoration: none !important;
+    @include user-select-none;
+
+    &:hover, &:focus{
+        color: $blue !important;
+    }
+}
+button{
+    all: unset;
+
+    @include second-link($white);
+    text-transform: capitalize;
+    @include user-select-none;
 }

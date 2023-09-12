@@ -19,12 +19,15 @@
 }
 
 /*
- * base button style
+ * To highlight text
  */
-button{
-    all: unset;
+.highlight{
+    color: $secondary-color;
 }
 
+/*
+ * base button style
+ */
 @mixin button-base($background-color, $svg-size){
     display: flex;
     flex-flow: row nowrap;
@@ -38,14 +41,9 @@ button{
     background: $background-color;
     border-radius: 0.5rem;
 
-    @include second-link($white);
-    text-transform: capitalize;
-    @include user-select-none;
-
     svg {
         width: $svg-size;
         height: $svg-size;
-
         fill: $white;
     }
 
@@ -88,7 +86,6 @@ button{
 
     .container{
         padding: 0.5rem 1.5rem;
-        
         width: 32vw;
         min-width: fit-content;
         height: fit-content;
@@ -101,7 +98,6 @@ button{
 
         .button-primary{
             padding: 0.1rem 1.1rem;
-
             border-radius: 5rem;
         }
 
@@ -111,30 +107,14 @@ button{
                     margin: 1rem 0.5rem;
                 }
 
-                @include second-link($medium-gray);
-                text-transform: capitalize;
-                text-decoration: none !important;
-                @include user-select-none;
-
                 width: fit-content;
-
-                margin-right: 3.5vw !important;
+                margin-right: 4vw !important;
                 padding: 0.1rem 0.5rem;
                 border-radius: 5rem;
 
-                &.active{
-                    @include second-link($dark-gray);
-                }
-
-                &:hover{
-                    color: $blue !important;
-                }
                 &:active{
-                    color: $white !important;
                     background-color: $blue !important;
-
                     box-shadow: inset 0.13rem 0.3rem 0rem rgba(0, 0, 0, 0.25);
-                
                     transition: none;
                 }   
             }
@@ -164,48 +144,26 @@ button{
         position: fixed;
         top: 40vh;
         right: 0;
-
         display: flex;
         flex-flow: column nowrap;
         justify-content: flex-end;
         align-items: flex-end;
         z-index: 100;
-
         height: fit-content;
         min-height: fit-content;
-
         padding-right: 2.5rem;
         gap: 0.625rem;
-
-        list-style-type: none;
 
         a {
             display: flex;
             flex-flow: row nowrap;
             justify-content: flex-end;
             align-items: center;
-
-            @include main-small($light-gray);
-            text-transform: capitalize;
-            text-decoration: none;
-
             width: fit-content;
-
-            // REMOVE TO MAKE IT CLICKABLE
-            pointer-events: none;
-
-            &:hover{
-                color: $blue !important;
-            }
-            &:active{
-                color: $red !important;
-                text-decoration: underline;
-            }
 
             &::after {
                 content: '';
                 display: inline-block;
-
                 width: 0.8rem;
                 height: 0.8rem;
                 margin-left: 0.5rem;
@@ -217,8 +175,6 @@ button{
         }
 
         .active{
-            @include main-small($dark-gray);
-
             &::after {
                 background: linear-gradient(135deg, rgba(56, 56, 56, 0.8) 0%, rgba(56, 56, 56, 0.6) 100%);
             }
@@ -226,10 +182,8 @@ button{
 
         div{
             content: '';
-
             width: 0.25rem;
             height: 0.25rem;
-
             margin-right: 0.28rem;
 
             background: $light-gray;
